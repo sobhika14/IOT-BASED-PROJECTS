@@ -1,12 +1,4 @@
-void setup() {
-  // put your setup code here, to run once:
-
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
-}const int trigger1 = 1; //Trigger pin of 1st Sesnor
+const int trigger1 = 1; //Trigger pin of 1st Sesnor
 const int echo1 = 2; //Echo pin of 1st Sesnor
 const int trigger2 = 3; //Trigger pin of 2nd Sesnor
 const int echo2 = 4;//Echo pin of 2nd Sesnor
@@ -82,12 +74,7 @@ distL =dist; //get distance of left sensor
 calculate_distance(trigger2,echo2);
 distR =dist; //get distance of right sensor
 
-//Uncomment for debudding
-/*Serial.print("L=");
-Serial.println(distL);
-Serial.print("R=");
-Serial.println(distR);
-*/
+
 
 //Pause Modes -Hold
 if ((distL >25 && distR>25) && (distL <50 && distR<50)) //Detect both hands
